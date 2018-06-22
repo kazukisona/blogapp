@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="margin: 4px; display: inline;">Articles</h1>
+    <a href="{% url 'post_new' %}"><p class="btn btn-primary">New Post</p></a>
+    {% for post in posts %}
+        <div class="post">
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="date"> {{ post.date }} </div>
+        </div>
+    {% endfor %}
+{% endblock %}

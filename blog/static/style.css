@@ -1,0 +1,16 @@
+body {
+    padding-left: 80px;
+}
+
+.header {
+    padding: 20px 20px 20px 10px;
+}
+
+.post-form {
+    width: 100%;
+}
+
+.cancel {
+    background-color: grey;
+    margin: 2px;
+}
